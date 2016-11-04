@@ -27,7 +27,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
             EventService = (function () {
                 function EventService(_http) {
                     this._http = _http;
-                    this._eventUrl = 'https://localeventsapp-alohacode.c9users.io/data.json';
+                    this._eventUrl = 'app/assets/events.json';
                 }
                 EventService.prototype.getEvents = function () {
                     return this._http.get(this._eventUrl)

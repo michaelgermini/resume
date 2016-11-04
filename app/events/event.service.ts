@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class EventService {
     
-    private _eventUrl = 'https://localeventsapp-alohacode.c9users.io/data.json';
+    private _eventUrl = 'app/assets/events.json';
     
     constructor(private _http: Http) { }
     

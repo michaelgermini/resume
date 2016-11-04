@@ -33,10 +33,10 @@ System.register(['angular2/core', './event-filter.pipe', '../shared/thumb.compon
             EventListComponent = (function () {
                 function EventListComponent(_eventService) {
                     this._eventService = _eventService;
-                    this.pageTitle = '+ Event List +';
-                    this.imageWidth = 50;
+                    this.pageTitle = '+ Organisation List +';
+                    this.imageWidth = 80;
                     this.imageMargin = 2;
-                    this.showImage = false;
+                    this.showImage = true;
                 }
                 EventListComponent.prototype.toggleImage = function () {
                     this.showImage = !this.showImage;
