@@ -1,0 +1,24 @@
+.card {
+    position: relative;
+    width: 348px;
+    height: 330px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 1px 1px #888;
+    min-height: 370px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    padding: 10px;
+}
+a {
+    text-decoration: none !important;
+    color: #41b7d8;
+    font-weight: 400;
+    font-family: "Skolar Regular","Roboto Slab","Droid Serif",Cambria,Georgia,"Times New Roman",Times,serif;
+    font-style: normal;
+}
+.card-footer{
+    float: left;
+    text-align: left;
+    margin-top: 190px;
+}

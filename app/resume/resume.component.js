@@ -24,7 +24,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 ResumeComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/resume/resume.component.html'
+                        templateUrl: 'app/resume/resume.component.html',
+                        styleUrls: ['app/resume/resume.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ResumeComponent);
