@@ -11,29 +11,33 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var WelcomeComponent;
+    var EventFilterPipe;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            WelcomeComponent = (function () {
-                function WelcomeComponent() {
-                    this.pageTitle = 'Welcome';
+            EventFilterPipe = (function () {
+                function EventFilterPipe() {
                 }
-                WelcomeComponent = __decorate([
-                    core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html',
-                        styleUrls: ['app/home/welcome.component.css']
+                EventFilterPipe.prototype.transform = function (value, args) {
+                    var filter = args[0] ? args[0].toLocaleLowerCase() : null;
+                    return filter ? value.filter(function (event) {
+                        return event.name.toLocaleLowerCase().indexOf(filter) != -1;
+                    }) : value;
+                };
+                EventFilterPipe = __decorate([
+                    core_1.Pipe({
+                        name: 'eventFilter'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], WelcomeComponent);
-                return WelcomeComponent;
+                ], EventFilterPipe);
+                return EventFilterPipe;
             }());
-            exports_1("WelcomeComponent", WelcomeComponent);
+            exports_1("EventFilterPipe", EventFilterPipe);
         }
     }
 });
 
-//# sourceMappingURL=welcome.component.js.map
+//# sourceMappingURL=event-filter.pipe.js.map

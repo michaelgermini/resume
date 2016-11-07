@@ -11,29 +11,29 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var WelcomeComponent;
+    var PersonComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            WelcomeComponent = (function () {
-                function WelcomeComponent() {
-                    this.pageTitle = 'Welcome';
+            PersonComponent = (function () {
+                function PersonComponent() {
+                    this.pageTitle = 'Person';
                 }
-                WelcomeComponent = __decorate([
+                PersonComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html',
-                        styleUrls: ['app/home/welcome.component.css']
+                        templateUrl: 'app/person/person.component.html',
+                        styleUrls: ['app/person/person.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], WelcomeComponent);
-                return WelcomeComponent;
+                ], PersonComponent);
+                return PersonComponent;
             }());
-            exports_1("WelcomeComponent", WelcomeComponent);
+            exports_1("PersonComponent", PersonComponent);
         }
     }
 });
 
-//# sourceMappingURL=welcome.component.js.map
+//# sourceMappingURL=person.component.js.map

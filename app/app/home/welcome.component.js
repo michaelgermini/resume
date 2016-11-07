@@ -24,8 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 WelcomeComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html',
-                        styleUrls: ['app/home/welcome.component.css']
+                        templateUrl: 'app/home/welcome.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], WelcomeComponent);

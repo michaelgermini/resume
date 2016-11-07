@@ -11,29 +11,29 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var WelcomeComponent;
+    var ResumeComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            WelcomeComponent = (function () {
-                function WelcomeComponent() {
-                    this.pageTitle = 'Welcome';
+            ResumeComponent = (function () {
+                function ResumeComponent() {
+                    this.pageTitle = 'Curriculum Vitae';
                 }
-                WelcomeComponent = __decorate([
+                ResumeComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/home/welcome.component.html',
-                        styleUrls: ['app/home/welcome.component.css']
+                        templateUrl: 'app/resume/resume.component.html',
+                        styleUrls: ['app/resume/resume.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], WelcomeComponent);
-                return WelcomeComponent;
+                ], ResumeComponent);
+                return ResumeComponent;
             }());
-            exports_1("WelcomeComponent", WelcomeComponent);
+            exports_1("ResumeComponent", ResumeComponent);
         }
     }
 });
 
-//# sourceMappingURL=welcome.component.js.map
+//# sourceMappingURL=resume.component.js.map

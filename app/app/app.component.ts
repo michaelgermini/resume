@@ -6,7 +6,6 @@ import 'rxjs/Rx';
 import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 import { WelcomeComponent } from './home/welcome.component';
 import { ResumeComponent } from './resume/resume.component';
-import { PersonComponent } from './person/person.component';
 import {  EventDetailComponent } from './events/event-detail.component';
 
 @Component({
@@ -18,8 +17,7 @@ import {  EventDetailComponent } from './events/event-detail.component';
 			    <a class='navbar-brand'>{{pageTitle}}</a>
 			    <ul class='nav navbar-nav'>
 				    <li><a [routerLink]="['Welcome']">Bienvenue</a></li>
-					<li><a [routerLink]="['Resume']">CV</a></li>
-					<li><a [routerLink]="['Person']">Person</a></li>
+					<li><a [routerLink]="['Resume']">Curriculum Vitae</a></li>
 				    <li><a [routerLink]="['Events']">Organisation d'événements</a></li>
 			    </ul>
 		    </div>
@@ -35,12 +33,11 @@ import {  EventDetailComponent } from './events/event-detail.component';
 
 @RouteConfig([
 	{ path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
-	{ path: '/resume', name: 'Resume', component: ResumeComponent },
-	{ path: '/person', name: 'Person', component: PersonComponent },
+	{ path: '/resume', name: 'Resume', component: ResumeComponent, },
 	{ path: '/events', name: 'Events', component: EventListComponent },
 	{ path: '/event/:id', name: 'EventDetail', component: EventDetailComponent },
 ])
 
 export class AppComponent {
-    pageTitle: string = 'Demo';
+    pageTitle: string = 'Michaël Germini';
 }
