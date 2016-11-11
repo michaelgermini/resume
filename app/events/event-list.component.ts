@@ -13,7 +13,7 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
 })
 
 export class EventListComponent implements OnInit { 
-    pageTitle: string = '+ Organisation List +';
+    pageTitle: string = 'Organisation List';
     imageWidth: number = 80;
     imageMargin: number = 2;
     showImage: boolean = true;

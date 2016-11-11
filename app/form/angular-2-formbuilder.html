@@ -1,0 +1,43 @@
+            <div class="panel panel-primary">
+                    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+                <div class="background-image" style="background-image : url('http://germini.info/wp-content/uploads/2015/12/Code-Javascript-at-Free-Code-Camp-jQuery.jpg')">
+            </div>
+
+<div>
+    <form [ngFormModel]="carFormGroup" >
+            <div class="form-group">
+                <label class="col-xs-4 control-label text-muted" >Name : <span *ngIf="!carFormGroup.controls['carName'].valid">( required )</span> </label>
+                <div class="col-xs-8">
+                    <input class="form-control"
+                           type="text"
+                           [ngFormControl]="carFormGroup.controls['carName']"
+                    >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-4 control-label text-muted" >Color : <span *ngIf="!carFormGroup.controls['carColor'].valid">( required )</span> </label>
+                <div class="col-xs-8">
+                    <input class="form-control" type="text"
+                           [ngFormControl]="carFormGroup.controls['carColor']"
+                    >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-4 control-label text-muted" >Doors : <span *ngIf="!carFormGroup.controls['carDoors'].valid">( required )</span> </label>
+                <div class="col-xs-8">
+                    <input class="form-control" type="text"
+                           [ngFormControl]="carFormGroup.controls['carDoors']"
+                    >
+                </div>
+            </div> 
+
+    </form>
+    <h3>Our Form value : </h3>
+    <pre>{{carFormGroupValue}}</pre>
+    <h3>Is our Form Valid ?</h3>
+    <pre>{{carFormGroup.valid}}</pre>
+</div>
+
+</div>

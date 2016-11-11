@@ -1,0 +1,30 @@
+            <div class="panel panel-primary">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body"  >
+            <h1>Hello Angular 2</h1>
+            <div class="background-image" style="background-image : url('http://germini.info/wp-content/uploads/2015/12/codpen.io_1.jpg')">
+            </div>
+                         <p>
+                  <button type="button" class="btn btn-default" (click)="removeAngular2AccordionGroup()">
+                    Remove a group from the dynamic content!
+                  </button>
+                   <button type="button" class="btn btn-default" (click)="addAngular2AccordionGroup()">
+                    Add Content!
+                  </button>
+                </p>
+
+                <accordion>
+                  <accordion-group heading="First Group Header " isGroupOpen="true">
+                    Introduction
+                  </accordion-group>
+                  <accordion-group [heading]="group.heading" *ngFor="#group of groups">
+                    {{group.content}}
+                  </accordion-group>
+                  <accordion-group heading="Last Group Header" [isGroupOpen]="isGroupOpen">
+                    Additional Information
+                  </accordion-group>
+                </accordion>
+</div>
+</div>
